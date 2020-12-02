@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Sheet</title>
+    <script type="text/javascript">; 
+
+var sname = prompt("enter name");
+    var s1 = parseInt(prompt("Bangla Mark"));
+    var s2 = parseInt(prompt("English Mark"));
+    var s3 = parseInt(prompt("Math Mark"));
+    var s4 = parseInt(prompt("general science Mark"));
+    var s5 = parseInt(prompt("social science Mark"));
+    var s6 = parseInt(prompt("ict Mark"));
+    var tot=s1+s2+s3+s4+s5+s6;
+    var per = tot/6;
+    document.write("<h2>");
+    document.write("Student Name:"+sname+"<br>");
+    document.write("Bangla Mark         :"+s1+"<br>");
+    document.write("English Mark        :"+s2+"<br>");
+    document.write("Mathematics Mark    :"+s3+"<br>");
+    document.write("Genaral Science Mark:"+s4+"<br>");
+    document.write("Social Science Mark :"+s5+"<br>");
+    document.write("ICT Mark            :"+s6+"<br>");
+    if (s1<33 || s2<33 || s3<33 || s4<33 || s5<33 || s6<33) {
+        document.write("faield")
+    }
+    else{
+        document.write("passed")
+    }
+    if (per>=80) {
+        document.write("A+ Grade")
+    }
+    else if (per>=70) {
+        document.write("A Grade")
+    }
+    else if (per>=60) {
+        document.write("A- Grade")
+    }
+    else if (per>=50) {
+        document.write("B Grade")
+    }
+    else if (per>=40) {
+        document.write("c Grade")
+    }
+    else if (per>=33) {
+        document.write("D Grade")
+    }
+    else{
+        document.write("you are Failed")
+    }
+    </script>
+   
+</head>
+<body>
+    
+</body>
+</html>
